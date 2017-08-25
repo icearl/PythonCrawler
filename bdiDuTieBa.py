@@ -90,7 +90,7 @@ class BDTB:
     #获取每一层楼的内容,传入页面内容
     def getContent(self,page):
         #匹配所有楼层的内容
-        pattern = re.compile(r'<div id="post_content_.*?>(.*?)</div>',re.S)
+        pattern = re.compile(r'<div id="post_content_.*?>5289438763(.*?)</div>',re.S)
         items = re.findall(pattern,page)
         contents = []
         for item in items:
